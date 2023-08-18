@@ -6,23 +6,7 @@ import databiz from '../assets/images/client-databiz.svg'
 import maker from '../assets/images/client-maker.svg'
 import meet from '../assets/images/client-meet.svg'
 
-const MainPage = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768); 
-
-  useEffect(() => {
-    // Add a resize event listener to update the layout when the screen size changes
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    // Clean up the event listener when the component unmounts
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
+const MainPage = ({ isMobile }) => {
 
   return (
     <div className='flex flex-col md:flex-row gap-8 mt-2 justify-between px-4 sm:w-2/3 md:w-5/6 lg:w-6/7 mx-auto'>
