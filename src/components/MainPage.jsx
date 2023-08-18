@@ -25,7 +25,7 @@ const MainPage = () => {
 
 
   return (
-    <div className='flex flex-col md:flex-row gap-8 mt-2 justify-between sm:w-2/3 md:w-5/6 lg:w-6/7 mx-auto'>
+    <div className='flex flex-col md:flex-row gap-8 mt-2 justify-between px-4 sm:w-2/3 md:w-5/6 lg:w-6/7 mx-auto'>
       <div className='flex md:order-1'>
         {isMobile ? <img src={mobileHero} alt='hero' /> : <img src={desktopHero} alt='hero'/>}
       </div>

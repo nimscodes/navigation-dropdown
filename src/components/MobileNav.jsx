@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import menu from '../assets/images/icon-menu.svg';
 import menuClose from '../assets/images/icon-close-menu.svg';
+import Features from './Features';
+import Company from './Company';
 
 const MobileNav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,16 +34,16 @@ const MobileNav = () => {
         <div className='space-y-8 sm:w-3/4 mx-auto mt-12'>
           <ul className="flex flex-col space-y-4">
             <li>
-              <a href="#" className=" hover:text-almost-black">Home</a>
+              <a href="#"><Features /></a>
+            </li>
+            <li>
+              <a href="#"><Company /></a>
+            </li>
+            <li>
+              <a href="#" className=" hover:text-almost-black">Careers</a>
             </li>
             <li>
               <a href="#" className=" hover:text-almost-black">About</a>
-            </li>
-            <li>
-              <a href="#" className=" hover:text-almost-black">Services</a>
-            </li>
-            <li>
-              <a href="#" className=" hover:text-almost-black">Contact</a>
             </li>
           </ul>
           <div className='flex flex-col justify-center space-y-4'>

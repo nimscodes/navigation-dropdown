@@ -22,8 +22,8 @@ const Header = () => {
 
 
   return (
-    <div className="flex flex-row items-center p-4 ">
-      <div  className="flex items-center justify-center">
+    <div className="flex items-center p-4">
+      <div className="flex items-center justify-center">
         <img src={logo} alt="logo" />
       </div>
       {isMobile ? <MobileNav /> : <DesktopNav />}

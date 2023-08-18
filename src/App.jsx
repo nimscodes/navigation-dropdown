@@ -5,7 +5,7 @@ import './App.css'
 function App() {
 
   return (
-    <div className='font-epilogue'>
+    <div className='bg-almost-white font-epilogue'>
       <Header />
       <MainPage />
     </div>
